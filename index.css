@@ -1,0 +1,10 @@
+.lightSide {
+    background-color: white;
+}
+.darkSide {
+    background-color: black;
+}
+button {
+    width: 100px;
+    height: 50px;
+}

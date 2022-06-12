@@ -1,0 +1,25 @@
+{
+  "name": "nfactorial-homework-1006-htmlcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pushCommit": "git add . && git commit -m 'homework' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adilsarsembin/nfactorial-homework-1006-htmlcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adilsarsembin/nfactorial-homework-1006-htmlcss/issues"
+  },
+  "homepage": "https://github.com/adilsarsembin/nfactorial-homework-1006-htmlcss#readme",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}

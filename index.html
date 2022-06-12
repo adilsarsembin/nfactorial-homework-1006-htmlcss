@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/index.css">   
+</head>
+<body onload="alwaysActive()">
+    <div id="homeScreen" style="width: 100vw; height: 100vh; display: flex;
+    flex-direction: row" class="qw">
+        <div style="height: 100%; flex: 1; display: flex; justify-content: center; align-items: center;">
+            <button onclick="lightMode()">Light Mode</button>
+        </div>
+        <div style="height: 100%; flex: 1; display: flex; justify-content: center; align-items: center;">
+            <button onclick="darkMode()" >Dark Mode</button>
+        </div>
+        <div style="height: 100%; flex: 1; display: flex; justify-content: center; align-items: center;">
+            <button onclick="setCookie()" >Set Cookie</button>
+        </div>
+    </div>
+    <script>
+        const background = document.getElementById('homeScreen');
+        function lightMode() {
+            localStorage.setItem('theme', 'light');
+            background.className = 'lightSide';
+        }
+        function darkMode() {
+            localStorage.setItem('theme', 'dark');
+            background.className = 'darkSide';
+        }
+        function alwaysActive() {
+            const theme = localStorage.getItem('theme');
+            background.className = theme;
+        }   
+        function setCookie() {
+            document.cookie = "user: Adil; expires=Wed, 15 Jun 2022 18:00:00 GMT";
+        }
+    </script>
+</body>
+</html>
